@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="notificationFragment" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+        <item name="colorControlActivated">@color/notification_mode</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+        
+    </style>
+</resources>

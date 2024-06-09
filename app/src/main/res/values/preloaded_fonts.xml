@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/monsieur_la_doulaise</item>
+        <item>@font/montserrat</item>
+        <item>@font/montserrat_black_italic</item>
+        <item>@font/montserrat_bold</item>
+        <item>@font/montserrat_semibold</item>
+        <item>@font/montserrat_thin_italic</item>
+        <item>@font/muli</item>
+        <item>@font/muli_extralight</item>
+        <item>@font/muli_light</item>
+    </array>
+</resources>

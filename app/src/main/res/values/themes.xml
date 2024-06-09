@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for night mode. -->
+    <style name="Base.Theme.MSIARPA" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your night theme here. -->
+        <item name="colorPrimaryVariant">@color/mocuyellow</item>
+        <item name="colorPrimary">@color/mocublack</item>
+        <item name="colorOnPrimary">@color/mocudarkblue</item>
+
+        <item name="colorSecondaryVariant">@color/night_mode</item>
+        <item name="colorSecondary">@color/mocublack</item>
+        <item name="colorOnSecondary">#122F0A</item>
+    </style>
+
+    <!-- theme notification for night mode-->
+
+    <style name="nightModeSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/night_mode</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+
+
+    <style name="progresbar">
+        <item name="colorControlActivated">#3A54E6</item>
+    </style>
+
+    <!-- theme notification for notification mode-->
+
+    <style name="notificationSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/notification_mode</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+
+
+    <!-- theme notification for private account mode-->
+
+    <style name="privateAccountSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/private_account</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Base.Theme.MSIARPA" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    Provided Styles are: MaterialSearchBarLight and MaterialSearchBarDark
+//search bar
+    <style name="MyCustomTheme" >
+        <item name="mt_searchBarColor">@color/searchBarPrimaryColor</item>
+        <item name="mt_dividerColor">@color/searchBarDividerColor</item>
+        <item name="mt_navIconTint">@color/searchBarNavIconTintColor</item>
+        <item name="mt_searchIconTint">@color/searchBarSearchIconTintColor</item>
+        <item name="mt_clearIconTint">@color/searchBarClearIconTintColor</item>
+        <item name="mt_menuIconTint">@color/searchBarMenuIconTintColor</item>
+        <item name="mt_backIconTint">@color/searchBarBackIconTintColor</item>
+        <item name="mt_textCursorTint">@color/searchBarCursorColor</item>
+        <item name="mt_textColor">@color/searchBarTextColor</item>
+        <item name="mt_hintColor">@color/searchBarHintColor</item>
+        <item name="mt_placeholderColor">@color/searchBarPlaceholderColor</item>
+        <item name="mt_highlightedTextColor">@color/searchBarTextHighlightColor</item>
+    </style>
+</resources>

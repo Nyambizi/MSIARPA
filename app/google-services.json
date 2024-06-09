@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "673299389874",
+    "project_id": "msiarpa",
+    "storage_bucket": "msiarpa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673299389874:android:2d4d58c44ac133160b58ab",
+        "android_client_info": {
+          "package_name": "com.example.msiarpa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjtKCX4Qf0dlT3FMVdnAiE863LrA7DqVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

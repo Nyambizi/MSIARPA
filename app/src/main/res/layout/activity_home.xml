@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home"
+    android:background="#E8E8EC">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#082F56"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+                <TextView
+                    android:id="@+id/user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/linear_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="@drawable/logout_background"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:id="@+id/logout_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Logout"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="5dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/logout_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:background="@null"
+                            android:layout_gravity="center"
+                            android:src="@drawable/logout"
+                            android:layout_marginLeft="8dp" />
+
+                </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_above="@id/meowBottomNavigation" />
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:id="@+id/meowBottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mbn_circleColor="#0D65F6"
+            app:mbn_backgroundBottomColor="#082F56"
+            android:layout_alignParentBottom="true"
+            app:mbn_defaultIconColor="#90a4ae"
+            app:mbn_rippleColor="#2f424242"
+            app:mbn_selectedIconColor="#E6EAEA"
+            app:mbn_shadowColor="#1f212121"
+            tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

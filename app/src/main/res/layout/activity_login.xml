@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="30dp"
+    tools:context=".Login">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:padding="20dp"
+            android:text="(MSIARPA) Login"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/mocublack"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:id="@+id/Back_ToLogin"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:padding="5dp"
+            android:src="@drawable/moculogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:padding="5dp"
+            android:text="Seclect Login as "
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/mocublack"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/students"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="25dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/mocublack"
+                    app:backgroundTint="@color/mocublack"
+                    app:layout_constraintEnd_toStartOf="@+id/guideLine"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/Teachers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lecturer"
+                    android:textSize="20sp"
+                    android:textColor="@color/mocublack"
+                    android:fontFamily="@font/montserrat_bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideLine"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/maleRadioButton" />
+
+
+                <View
+                    android:id="@+id/guideLine"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mocublack"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/maleRadioButton" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:textColorHint="@color/mocublack"
+                app:boxStrokeColor="@color/mocublack"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/mocublack"
+                app:hintTextColor="@color/mocublack"
+                app:startIconDrawable="@drawable/mail"
+                app:startIconTint="@color/mocublack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/LoginEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/mocublack"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:hint="Password"
+                android:textColorHint="@color/mocublack"
+                app:boxStrokeColor="@color/mocublack"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/mocublack"
+                app:hintTextColor="@color/mocublack"
+                app:startIconDrawable="@drawable/securitypassword"
+                app:startIconTint="@color/mocublack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/LoginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/mocublack"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/forgotpassword"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:text=" Forgot password? "
+            android:layout_gravity="left"
+            android:fontFamily="@font/montserrat"
+            android:textAllCaps="false"
+            android:textColor="@color/mocublue"
+            android:textSize="15sp" />
+
+
+        <RelativeLayout
+
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="20dp"
+            android:visibility="gone"
+            android:background="@drawable/progressbackground"
+            android:elevation="10dp">
+
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                />
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/mocublack"
+            android:elevation="5dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Login"
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:orientation="horizontal"
+            android:padding="30dp"
+            android:gravity="center_horizontal">
+
+
+
+            <TextView
+                android:id="@+id/ihaveaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I don't have an Account!"
+                android:textAllCaps="false"
+                android:textColor="@color/mocublack"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" | Register"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textAllCaps="false"
+                android:textColor="@color/mocublue"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
